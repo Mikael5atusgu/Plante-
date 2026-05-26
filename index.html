@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio Plante+</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topo">
+    <h1 style="font-family:fantasy;">Plante+</h1>
+    <p>Página de Perfil</p>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Início</a>
+    <a href="Cf.html">Desafio diario</a>
+    <a href="desafios.html">Mandar foto</a>
+  </div>
+
+  <div class="row">
+
+    <div class="leftcolumn">
+
+      <div class="card" id="perfil">
+
+        <h2>Meu Perfil</h2>
+
+        <img 
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          class="perfil-img"
+        >
+
+        <p><b>Nome:</b> Gabriel Carezolin Borges</p>
+
+        <p><b>Nível:</b> Explorador Verde</p>
+
+        <p><b>Pontos:</b> 120</p>
+
+      </div>
+
+      <div class="card" id="fotos">
+
+        <h2>Fotos Tiradas</h2>
+
+        <p>Você já plantou 24 fotos de árvores.</p>
+
+        <div class="fakeimg">
+          Área para fotos
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="rightcolumn">
+
+      <div class="card" id="amigos">
+
+        <h2>Adicionar Amigos</h2>
+
+        <input 
+          type="text"
+          id="nomeAmigo"
+          placeholder="Digite o nome"
+        >
+
+        <button onclick="adicionarAmigo()">
+          Adicionar
+        </button>
+
+        <ul id="listaAmigos">
+          <li>Lucas</li>
+          <li>Ana</li>
+          <li>Carlos</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Estatísticas</h2>
+
+        <p>Árvores encontradas: 12</p>
+
+        <p>Pontos totais: 120</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="perfil.js"></script>
+
+</body>
+</html>

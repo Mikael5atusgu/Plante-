@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plante+ Fotos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topo">
+    <h1 style="font-family:fantasy;">Plante+</h1>
+    <p>Tire fotos de árvores plantadas e ganhe pontos</p>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Início</a>
+    <a href="Cf.html">Desafio diario</a>
+    <a href="desafios.html">Mandar foto</a>
+  </div>
+
+  <div class="container">
+
+    <div class="card" id="inicio">
+      <h2>Como funciona?</h2>
+
+      <p>
+        O objetivo é simples: plante uma árvore na sua cidade,
+        tire fotos e envie para ganhar pontos.
+      </p>
+    </div>
+
+    <div class="card" id="desafio">
+      <h2>Enviar Foto</h2>
+
+      <input type="file" id="foto" accept="image/*">
+
+      <img id="preview">
+
+      <br>
+
+      <button onclick="ganharPontos()">
+        Enviar Foto
+      </button>
+
+      <p class="pontos">
+        Pontos:
+        <span id="pontos">0</span>
+      </p>
+    </div>
+
+    <div class="card" id="ranking">
+      <h2>Ranking</h2>
+
+      <ol>
+        <li>Lucas - 120 pontos</li>
+        <li>Ana - 95 pontos</li>
+        <li>Carlos - 80 pontos</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
